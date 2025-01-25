@@ -4,131 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan Juliani - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #eee;
-            background-color: #000;
-        }
-
-        header {
-            background: #111;
-            color: #eee;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: #764ea1;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 10px auto 0;
-            background-color: #222;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        section h2 {
-            border-bottom: 2px solid #1b1b1b;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            color: #f0f0f0;
-        }
-
-        section input {
-            background-color: #222;
-            border: 0px solid none;
-            outline: none;
-            color: #f0f0f0;
-            background: transparent;
-            border: none;
-            width: calc(100% - 132px);
-            line-height: 17px;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            margin: -10px 0 0 -4px ;
-            font-size: 16px;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .project {
-            background: #2a2a3d;
-            border: 1px solid #444;
-            border-radius: 5px;
-            padding: 1rem;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-        }
-
-        .project h3 {
-            margin-top: 0;
-            color: #f0f0f0;
-        }
-
-        .project a {
-            color: #764ea1;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .project a:hover {
-            text-decoration: underline;
-        }
-
-        ul li a {
-            color: #764ea1;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #1e1e2f;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-            border-top: 2px solid #764ea1;
-            color: #f0f0f0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <title>Allan Juliani</title>
+    <link rel="stylesheet" href="allanjuliani/style.css">
 </head>
 
 <body>
@@ -141,7 +18,6 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
     <section id="about">
         <h2>About Me</h2>
         <!-- <p>Hello! I'm Allan Juliani, a dedicated Software Engineer with expertise in Python, C#, PHP, and Java. I have a
@@ -159,7 +35,6 @@
             </div>
         </div>
     </section>
-
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
@@ -180,7 +55,6 @@
             </div>
         </div>
     </section>
-
     <section id="contact">
         <h2>Contact</h2>
         <p>I'd love to connect! Reach out to me via the platforms below:</p>
@@ -190,11 +64,9 @@
             <li>GitHub: <a href="https://github.com/allanjuliani" target="_blank">github.com/allanjuliani</a></li>
         </ul>
     </section>
-
     <footer>
         <p>&copy; 2025 Allan Juliani. All rights reserved.</p>
     </footer>
-
     <script>
         // JavaScript to make the navigation smooth scrolling
         document.querySelectorAll('nav a').forEach(link => {
