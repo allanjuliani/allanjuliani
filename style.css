@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,8 +8,9 @@ body {
     background-color: #000;
 }
 
+/* Header */
 header {
-    background: #111;
+    background-color: #111;
     color: #eee;
     padding: 1.5rem 0;
     text-align: center;
@@ -20,53 +22,53 @@ header h1 {
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 nav a {
     color: #764ea1;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 1rem;
     font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #9f7cd1;
 }
 
+/* Section */
 section {
     padding: 2rem;
     max-width: 800px;
-    margin: 10px auto 0;
+    margin: 1rem auto;
     background-color: #222;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem;
     border-bottom: 2px solid #1b1b1b;
     padding-bottom: 0.5rem;
     color: #f0f0f0;
 }
 
 section input {
-    background-color: #222;
-    border: 0px solid none;
-    outline: none;
-    color: #f0f0f0;
+    width: 100%;
     background: transparent;
     border: none;
-    width: calc(100% - 132px);
-    line-height: 17px;
+    outline: none;
+    color: #f0f0f0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    margin: -10px 0 0 -4px ;
     font-size: 16px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
+/* Projects */
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -74,10 +76,10 @@ section input {
 }
 
 .project {
-    background: #2a2a3d;
+    background-color: #2a2a3d;
     border: 1px solid #444;
-    border-radius: 5px;
-    padding: 1rem;
+    border-radius: 8px;
+    padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -88,7 +90,7 @@ section input {
 }
 
 .project h3 {
-    margin-top: 0;
+    margin: 0 0 1rem;
     color: #f0f0f0;
 }
 
@@ -96,20 +98,30 @@ section input {
     color: #764ea1;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .project a:hover {
     text-decoration: underline;
+    color: #9f7cd1;
 }
 
+/* Utility styles */
 ul li a {
     color: #764ea1;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
+ul li a:hover {
+    text-decoration: underline;
+    color: #9f7cd1;
+}
+
+/* Footer */
 footer {
-    background: #1e1e2f;
+    background-color: #1e1e2f;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
