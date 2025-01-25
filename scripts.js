@@ -17,9 +17,7 @@ const phrases = [
 
 let Home = {
     speed: 1000,
-
     init: function () {},
-
     fill: async function (column_index) {},
 };
 
