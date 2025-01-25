@@ -1,3 +1,20 @@
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').slice(1);
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+const phrases = [
+    "hi there 👋",
+    "my name is Allan",
+    "software engineer",
+    "17 years in IT field 🖥️",
+    "working as a Software Engineer at Uber",
+];
+
 let Home = {
     speed: 1000,
 
