@@ -1,17 +1,18 @@
 :root {
     --color-text: #ddd;
     --color-background: #000;
-    --color-header-bg: #0a0a0a;
-    --color-link: rgb(26, 99, 26);
-    --color-link-hover: rgb(50, 201, 50);
-    --color-section-bg: #181818;
+    --color-header-bg: #11111190;
+    --color-link: rgb(60, 116, 180);
+    --color-link-hover: rgb(74, 144, 224);
+    --color-section-bg: #11111190;
     --color-section-border: #1a5b31;
     --color-input-text: #ddd;
-    --color-project-bg: rgb(40, 40, 40);
+    --color-project-bg: #22222290;
     --color-project-border: #1a5b31;
-    --color-footer-bg: #171d19;
-    --color-about-dir: rgb(60, 116, 180);
+    --color-footer-bg: #0e0e0e9d;
+    --color-about-dir: rgb(60, 180, 64);
     --color-about-root: rgb(201, 102, 21);
+    --color-line: #222
 }
 
 /* General styles */
@@ -21,7 +22,10 @@ body {
     padding: 0;
     line-height: 1.6;
     color: var(--color-text);
-    background-color: var(--color-background);
+    background: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Header */
@@ -61,12 +65,12 @@ section {
     margin: 1rem auto;
     background-color: var(--color-section-bg);
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-line);
 }
 
 section h2 {
     margin: 0 0 1.5rem;
-    border-bottom: 2px solid var(--color-section-border);
+    border-bottom: 1px solid var(--color-line);
     padding-bottom: 0.5rem;
     color: var(--color-input-text);
 }
@@ -101,7 +105,7 @@ section input {
 
 .project {
     background-color: var(--color-project-bg);
-    border: 1px solid var(--color-project-border);
+    border: 1px solid var(--color-line);
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
@@ -144,7 +148,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-    border-top: 2px solid var(--color-link);
+    border-top: 1px solid var(--color-line);
     color: var(--color-input-text);
 }
 
