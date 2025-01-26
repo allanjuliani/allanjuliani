@@ -22,7 +22,8 @@ body {
     padding: 0;
     line-height: 1.6;
     color: var(--color-text);
-    background: url("/allanjuliani/bg.jpg");
+    background-color: var(--color-background);
+    background-image: url("/allanjuliani/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
