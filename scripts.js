@@ -3,8 +3,11 @@ document.querySelectorAll('nav a').forEach(link => {
         e.preventDefault();
         const targetId = this.getAttribute('href').slice(1);
         const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    });
+        window.scrollTo({
+            top: targetSection.offsetTop + 5,
+            behavior: 'smooth'
+        });
+     });
 });
 
 const phrases = [
