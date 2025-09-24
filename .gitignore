@@ -31,3 +31,10 @@ dist-ssr
 
 # build output
 build
+
+# husky
+.husky
+
+# npm package files
+package-lock.json
+

@@ -1,50 +1,47 @@
 import { motion } from 'motion/react';
-import { ExternalLink, Github, Terminal, Zap, Shield, Brain } from 'lucide-react';
+import { ExternalLink, Github, Terminal, Shield, Brain } from 'lucide-react';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function ProjectsSection() {
   const projects = [
     {
-      title: "NEURAL_TRADING_BOT",
-      description: "Advanced cryptocurrency trading algorithm powered by machine learning. Features real-time market analysis, risk management protocols, and automated portfolio optimization.",
-      image: "https://images.unsplash.com/photo-1748609664795-11546ad62000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibG9ja2NoYWluJTIwY3J5cHRvY3VycmVuY3klMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4NjY3NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tech: ["Python", "TensorFlow", "WebSocket", "Redis"],
-      liveUrl: "#",
-      githubUrl: "#",
-      status: "ACTIVE",
-      icon: <Brain className="w-5 h-5" />
+      title: 'NEURAL_TRADING_BOT',
+      description:
+        'Advanced cryptocurrency trading algorithm powered by machine learning. Features real-time market analysis, risk management protocols, and automated portfolio optimization.',
+      image:
+        'https://images.unsplash.com/photo-1748609664795-11546ad62000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibG9ja2NoYWluJTIwY3J5cHRvY3VycmVuY3klMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4NjY3NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      tech: ['Python', 'TensorFlow', 'WebSocket', 'Redis'],
+      liveUrl: '#',
+      githubUrl: '#',
+      status: 'ACTIVE',
+      icon: <Brain className="w-5 h-5" />,
     },
     {
-      title: "QUANTUM_SECURE_CHAT",
-      description: "End-to-end encrypted messaging platform using quantum-resistant cryptography. Implements post-quantum algorithms for future-proof security.",
-      image: "https://images.unsplash.com/photo-1752253604157-65fb42c30816?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwaG9sb2dyYXBoaWMlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4NjY3NzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tech: ["React", "WebRTC", "Rust", "Docker"],
-      liveUrl: "#",
-      githubUrl: "#",
-      status: "BETA",
-      icon: <Shield className="w-5 h-5" />
+      title: 'QUANTUM_SECURE_CHAT',
+      description:
+        'End-to-end encrypted messaging platform using quantum-resistant cryptography. Implements post-quantum algorithms for future-proof security.',
+      image:
+        'https://images.unsplash.com/photo-1752253604157-65fb42c30816?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwaG9sb2dyYXBoaWMlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4NjY3NzIwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      tech: ['React', 'WebRTC', 'Rust', 'Docker'],
+      liveUrl: '#',
+      githubUrl: '#',
+      status: 'BETA',
+      icon: <Shield className="w-5 h-5" />,
     },
     {
-      title: "CYBERPUNK_DASHBOARD",
-      description: "Real-time system monitoring dashboard with holographic UI elements. Tracks server performance, security metrics, and network analytics.",
-      image: "https://images.unsplash.com/photo-1578070581071-d9b52bf80993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnB1bmslMjBuZW9uJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc1ODY2NzcyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      tech: ["Vue.js", "D3.js", "Socket.io", "GraphQL"],
-      liveUrl: "#",
-      githubUrl: "#",
-      status: "PRODUCTION",
-      icon: <Terminal className="w-5 h-5" />
-    }
+      title: 'CYBERPUNK_DASHBOARD',
+      description:
+        'Real-time system monitoring dashboard with holographic UI elements. Tracks server performance, security metrics, and network analytics.',
+      image:
+        'https://images.unsplash.com/photo-1578070581071-d9b52bf80993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnB1bmslMjBuZW9uJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc1ODY2NzcyM3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      tech: ['Vue.js', 'D3.js', 'Socket.io', 'GraphQL'],
+      liveUrl: '#',
+      githubUrl: '#',
+      status: 'PRODUCTION',
+      icon: <Terminal className="w-5 h-5" />,
+    },
   ];
-
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'ACTIVE': return 'green';
-      case 'BETA': return 'yellow';
-      case 'PRODUCTION': return 'cyan';
-      default: return 'gray';
-    }
-  };
 
   return (
     <section className="py-20 px-4 relative overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
@@ -58,7 +55,7 @@ export function ProjectsSection() {
           transition={{
             duration: 30,
             repeat: Infinity,
-            ease: "linear",
+            ease: 'linear',
           }}
         />
       </div>
@@ -73,7 +70,7 @@ export function ProjectsSection() {
         transition={{
           duration: 4,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
       <motion.div
@@ -85,7 +82,7 @@ export function ProjectsSection() {
         transition={{
           duration: 5,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
 
@@ -98,7 +95,8 @@ export function ProjectsSection() {
           className="text-center mb-16"
         >
           <div className="font-mono text-green-400 mb-4">
-            <span className="text-cyan-400">{'>'}</span> ls -la ./projects/ --featured
+            <span className="text-cyan-400">{'>'}</span> ls -la ./projects/
+            --featured
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text mb-6 font-mono">
             ACTIVE_PROJECTS
@@ -133,24 +131,39 @@ export function ProjectsSection() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
 
                     {/* Project status indicator */}
-                    <div className={`absolute top-4 right-4 bg-black/80 border px-3 py-1 font-mono text-xs ${
-                      project.status === 'ACTIVE' ? 'border-green-400/60' :
-                      project.status === 'BETA' ? 'border-yellow-400/60' :
-                      project.status === 'PRODUCTION' ? 'border-cyan-400/60' :
-                      'border-gray-400/60'
-                    }`}>
-                      <div className={`flex items-center gap-2 ${
-                        project.status === 'ACTIVE' ? 'text-green-400' :
-                        project.status === 'BETA' ? 'text-yellow-400' :
-                        project.status === 'PRODUCTION' ? 'text-cyan-400' :
-                        'text-gray-400'
-                      }`}>
-                        <div className={`w-2 h-2 rounded-full animate-pulse ${
-                          project.status === 'ACTIVE' ? 'bg-green-400' :
-                          project.status === 'BETA' ? 'bg-yellow-400' :
-                          project.status === 'PRODUCTION' ? 'bg-cyan-400' :
-                          'bg-gray-400'
-                        }`}></div>
+                    <div
+                      className={`absolute top-4 right-4 bg-black/80 border px-3 py-1 font-mono text-xs ${
+                        project.status === 'ACTIVE'
+                          ? 'border-green-400/60'
+                          : project.status === 'BETA'
+                            ? 'border-yellow-400/60'
+                            : project.status === 'PRODUCTION'
+                              ? 'border-cyan-400/60'
+                              : 'border-gray-400/60'
+                      }`}
+                    >
+                      <div
+                        className={`flex items-center gap-2 ${
+                          project.status === 'ACTIVE'
+                            ? 'text-green-400'
+                            : project.status === 'BETA'
+                              ? 'text-yellow-400'
+                              : project.status === 'PRODUCTION'
+                                ? 'text-cyan-400'
+                                : 'text-gray-400'
+                        }`}
+                      >
+                        <div
+                          className={`w-2 h-2 rounded-full animate-pulse ${
+                            project.status === 'ACTIVE'
+                              ? 'bg-green-400'
+                              : project.status === 'BETA'
+                                ? 'bg-yellow-400'
+                                : project.status === 'PRODUCTION'
+                                  ? 'bg-cyan-400'
+                                  : 'bg-gray-400'
+                          }`}
+                        ></div>
                         {project.status}
                       </div>
                     </div>
@@ -158,12 +171,12 @@ export function ProjectsSection() {
                 </div>
               </div>
 
-              <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+              <div
+                className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}
+              >
                 <div className="bg-black/60 backdrop-blur-sm border border-cyan-400/30 p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="text-cyan-400">
-                      {project.icon}
-                    </div>
+                    <div className="text-cyan-400">{project.icon}</div>
                     <h3 className="text-2xl font-bold text-cyan-400 font-mono">
                       {project.title}
                     </h3>
@@ -179,7 +192,8 @@ export function ProjectsSection() {
 
                   <div className="mb-6">
                     <div className="font-mono text-green-400 mb-3 text-sm">
-                      <span className="text-cyan-400">{'>'}</span> cat ./package.json | grep dependencies
+                      <span className="text-cyan-400">{'>'}</span> cat
+                      ./package.json | grep dependencies
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech) => (
@@ -198,7 +212,11 @@ export function ProjectsSection() {
                       className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-black font-mono flex items-center gap-2 rounded-none border border-cyan-400"
                       asChild
                     >
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink size={16} />
                         EXEC_DEMO
                       </a>
@@ -208,7 +226,11 @@ export function ProjectsSection() {
                       className="border-green-400 text-green-400 hover:bg-green-400/10 font-mono flex items-center gap-2 rounded-none"
                       asChild
                     >
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Github size={16} />
                         SOURCE_CODE
                       </a>
@@ -229,7 +251,8 @@ export function ProjectsSection() {
           className="mt-16 bg-black/60 backdrop-blur-sm border border-green-400/30 p-6 font-mono"
         >
           <div className="text-green-400 mb-4">
-            <span className="text-cyan-400">{'>'}</span> git log --oneline --graph --all
+            <span className="text-cyan-400">{'>'}</span> git log --oneline
+            --graph --all
           </div>
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div>
@@ -241,11 +264,15 @@ export function ProjectsSection() {
               <div className="text-gray-400 text-sm">COMMITS</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-magenta-400 mb-1">25+</div>
+              <div className="text-2xl font-bold text-magenta-400 mb-1">
+                25+
+              </div>
               <div className="text-gray-400 text-sm">LANGUAGES</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-yellow-400 mb-1">100+</div>
+              <div className="text-2xl font-bold text-yellow-400 mb-1">
+                100+
+              </div>
               <div className="text-gray-400 text-sm">STARS_EARNED</div>
             </div>
           </div>

@@ -8,25 +8,25 @@ export function ContactSection() {
   const contactInfo = [
     {
       icon: <Mail className="w-5 h-5" />,
-      title: "EMAIL_ADDR",
-      content: "allan@cyberdomain.dev",
-      href: "mailto:allan@cyberdomain.dev",
-      color: "cyan"
+      title: 'EMAIL_ADDR',
+      content: 'allan@cyberdomain.dev',
+      href: 'mailto:allan@cyberdomain.dev',
+      color: 'cyan',
     },
     {
       icon: <Phone className="w-5 h-5" />,
-      title: "COMM_LINE",
-      content: "+55 (11) 9999-9999",
-      href: "tel:+5511999999999",
-      color: "green"
+      title: 'COMM_LINE',
+      content: '+55 (11) 9999-9999',
+      href: 'tel:+5511999999999',
+      color: 'green',
     },
     {
       icon: <MapPin className="w-5 h-5" />,
-      title: "LOCATION",
-      content: "São Paulo, Brazil",
-      href: "#",
-      color: "magenta"
-    }
+      title: 'LOCATION',
+      content: 'São Paulo, Brazil',
+      href: '#',
+      color: 'magenta',
+    },
   ];
 
   return (
@@ -41,7 +41,7 @@ export function ContactSection() {
           transition={{
             duration: 15,
             repeat: Infinity,
-            ease: "linear",
+            ease: 'linear',
           }}
         />
       </div>
@@ -55,7 +55,7 @@ export function ContactSection() {
         transition={{
           duration: 2,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       >
         <Wifi className="w-4 h-4" />
@@ -71,7 +71,7 @@ export function ContactSection() {
         transition={{
           duration: 3,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
 
@@ -84,14 +84,16 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <div className="font-mono text-green-400 mb-4">
-            <span className="text-cyan-400">{'>'}</span> ./establish_connection.sh --secure
+            <span className="text-cyan-400">{'>'}</span>{' '}
+            ./establish_connection.sh --secure
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text mb-6 font-mono">
             INIT_CONNECTION
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-mono">
             <span className="text-cyan-400">// </span>
-            Ready to collaborate on your next breakthrough project? Let's connect.
+            Ready to collaborate on your next breakthrough project? Let's
+            connect.
           </p>
         </motion.div>
 
@@ -106,12 +108,13 @@ export function ContactSection() {
           >
             <div className="bg-black/60 backdrop-blur-sm border border-cyan-400/30 p-6">
               <div className="font-mono text-green-400 mb-4">
-                <span className="text-cyan-400">{'>'}</span> cat ./contact_info.json
+                <span className="text-cyan-400">{'>'}</span> cat
+                ./contact_info.json
               </div>
               <div className="text-gray-300 leading-relaxed mb-6 font-mono text-sm">
-                Currently accepting new projects and collaborations. Specialized in
-                full-stack development, AI/ML integration, and cybersecurity solutions.
-                Response time: &lt;24h guaranteed.
+                Currently accepting new projects and collaborations. Specialized
+                in full-stack development, AI/ML integration, and cybersecurity
+                solutions. Response time: &lt;24h guaranteed.
               </div>
             </div>
 
@@ -121,21 +124,22 @@ export function ContactSection() {
                   cyan: {
                     border: 'border-cyan-400/30 hover:border-cyan-400/60',
                     text: 'text-cyan-400',
-                    icon: 'text-cyan-400'
+                    icon: 'text-cyan-400',
                   },
                   green: {
                     border: 'border-green-400/30 hover:border-green-400/60',
                     text: 'text-green-400',
-                    icon: 'text-green-400'
+                    icon: 'text-green-400',
                   },
                   magenta: {
                     border: 'border-magenta-400/30 hover:border-magenta-400/60',
                     text: 'text-magenta-400',
-                    icon: 'text-magenta-400'
-                  }
+                    icon: 'text-magenta-400',
+                  },
                 };
 
-                const colors = colorClasses[info.color as keyof typeof colorClasses];
+                const colors =
+                  colorClasses[info.color as keyof typeof colorClasses];
 
                 return (
                   <motion.a
@@ -147,14 +151,20 @@ export function ContactSection() {
                     viewport={{ once: true }}
                     className={`flex items-center gap-4 p-4 bg-black/60 backdrop-blur-sm border ${colors.border} transition-all duration-300 group font-mono`}
                   >
-                    <div className={`${colors.icon} group-hover:scale-110 transition-transform`}>
+                    <div
+                      className={`${colors.icon} group-hover:scale-110 transition-transform`}
+                    >
                       {info.icon}
                     </div>
                     <div>
-                      <p className={`${colors.text} font-medium text-sm`}>{info.title}</p>
+                      <p className={`${colors.text} font-medium text-sm`}>
+                        {info.title}
+                      </p>
                       <p className="text-gray-300 text-sm">{info.content}</p>
                     </div>
-                    <div className={`ml-auto ${colors.icon} opacity-0 group-hover:opacity-100 transition-opacity`}>
+                    <div
+                      className={`ml-auto ${colors.icon} opacity-0 group-hover:opacity-100 transition-opacity`}
+                    >
                       <Terminal className="w-4 h-4" />
                     </div>
                   </motion.a>
@@ -165,7 +175,8 @@ export function ContactSection() {
             {/* System status */}
             <div className="bg-black/60 backdrop-blur-sm border border-green-400/30 p-4 font-mono">
               <div className="text-green-400 mb-3 text-sm">
-                <span className="text-cyan-400">{'>'}</span> system_status --availability
+                <span className="text-cyan-400">{'>'}</span> system_status
+                --availability
               </div>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center justify-between">
@@ -193,13 +204,16 @@ export function ContactSection() {
             className="bg-black/60 backdrop-blur-sm border border-cyan-400/30 p-6"
           >
             <div className="font-mono text-green-400 mb-6">
-              <span className="text-cyan-400">{'>'}</span> ./send_message.sh --encrypted
+              <span className="text-cyan-400">{'>'}</span> ./send_message.sh
+              --encrypted
             </div>
 
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-cyan-400 mb-2 font-mono text-sm">FIRST_NAME:</label>
+                  <label className="block text-cyan-400 mb-2 font-mono text-sm">
+                    FIRST_NAME:
+                  </label>
                   <Input
                     type="text"
                     placeholder="Enter your first name"
@@ -207,7 +221,9 @@ export function ContactSection() {
                   />
                 </div>
                 <div>
-                  <label className="block text-cyan-400 mb-2 font-mono text-sm">LAST_NAME:</label>
+                  <label className="block text-cyan-400 mb-2 font-mono text-sm">
+                    LAST_NAME:
+                  </label>
                   <Input
                     type="text"
                     placeholder="Enter your last name"
@@ -217,7 +233,9 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-cyan-400 mb-2 font-mono text-sm">EMAIL_ADDR:</label>
+                <label className="block text-cyan-400 mb-2 font-mono text-sm">
+                  EMAIL_ADDR:
+                </label>
                 <Input
                   type="email"
                   placeholder="your.email@domain.com"
@@ -226,7 +244,9 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-cyan-400 mb-2 font-mono text-sm">PROJECT_TYPE:</label>
+                <label className="block text-cyan-400 mb-2 font-mono text-sm">
+                  PROJECT_TYPE:
+                </label>
                 <Input
                   type="text"
                   placeholder="Full-stack development, AI/ML, Security..."
@@ -235,7 +255,9 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-cyan-400 mb-2 font-mono text-sm">MESSAGE_BODY:</label>
+                <label className="block text-cyan-400 mb-2 font-mono text-sm">
+                  MESSAGE_BODY:
+                </label>
                 <Textarea
                   placeholder="Describe your project requirements..."
                   rows={5}

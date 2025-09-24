@@ -5,12 +5,12 @@ import { ProjectsSection } from './components/ProjectsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { useEffect } from 'react';
-import { initGA, trackPage } from "./analytics";
+import { initGA, trackPage } from './analytics';
 
 export default function App() {
-    useEffect(() => {
+  useEffect(() => {
     initGA();
-    trackPage("/");
+    trackPage('/');
   }, []);
   return (
     <div className="min-h-screen bg-slate-900">

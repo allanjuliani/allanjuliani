@@ -29,6 +29,9 @@
     "motion": "^12.23.19",
     "tailwind-merge": "^3.3.1",
     "react-ga4": "^2.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.0",
+    "prettier": "^3.0.0",
     "class-variance-authority": "^0.7.1"
   },
   "scripts": {
@@ -36,6 +39,15 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky",
+    "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "format": "prettier 'src/**/*.{js,jsx,ts,tsx,json,css,md}' --write"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }

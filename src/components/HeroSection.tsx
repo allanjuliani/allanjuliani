@@ -1,5 +1,13 @@
 import { motion } from 'motion/react';
-import { Github, Linkedin, Mail, ArrowDown, Terminal, Code, Cpu } from 'lucide-react';
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ArrowDown,
+  Terminal,
+  Code,
+  Cpu,
+} from 'lucide-react';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
@@ -30,7 +38,7 @@ export function HeroSection() {
         transition={{
           duration: 3,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
       <motion.div
@@ -42,7 +50,7 @@ export function HeroSection() {
         transition={{
           duration: 4,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
 
@@ -56,7 +64,7 @@ export function HeroSection() {
         transition={{
           duration: 8,
           repeat: Infinity,
-          ease: "linear",
+          ease: 'linear',
         }}
       />
 
@@ -86,7 +94,7 @@ export function HeroSection() {
               transition={{
                 duration: 5,
                 repeat: Infinity,
-                ease: "linear",
+                ease: 'linear',
               }}
             >
               ALLAN.SJ
@@ -111,8 +119,8 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <span className="text-cyan-400">// </span>
-            Architecting digital realities through code. Specializing in full-stack development,
-            AI integration, and cybersecurity solutions.
+            Architecting digital realities through code. Specializing in
+            full-stack development, AI integration, and cybersecurity solutions.
           </motion.p>
 
           {/* System stats */}
@@ -205,7 +213,7 @@ export function HeroSection() {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-cyan-400"
         animate={{
           y: [0, 15, 0],
-          opacity: [0.5, 1, 0.5]
+          opacity: [0.5, 1, 0.5],
         }}
         transition={{ duration: 2, repeat: Infinity }}
       >
@@ -221,7 +229,7 @@ export function HeroSection() {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
     </section>

@@ -55,17 +55,19 @@ export function Footer() {
               <span className="text-green-400">{'>'}</span> ls ./navigation/
             </div>
             <ul className="space-y-2 font-mono text-sm">
-              {['sys.home', 'usr.about', 'dev.projects', 'net.contact'].map((item) => (
-                <li key={item}>
-                  <a
-                    href={`#${item.split('.')[1]}`}
-                    className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <span className="text-green-400 text-xs">└──</span>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {['sys.home', 'usr.about', 'dev.projects', 'net.contact'].map(
+                (item) => (
+                  <li key={item}>
+                    <a
+                      href={`#${item.split('.')[1]}`}
+                      className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2"
+                    >
+                      <span className="text-green-400 text-xs">└──</span>
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
 
@@ -161,8 +163,7 @@ export function Footer() {
             {/* © {currentYear} Allan Juliani. Crafted with{' '}
             <Code size={14} className="text-green-400" /> and{' '}
             <Heart size={14} className="text-red-500 animate-pulse" /> for Dani */}
-            Crafted with{' '}
-            <Code size={14} className="text-green-400" /> and{' '}
+            Crafted with <Code size={14} className="text-green-400" /> and{' '}
             <Heart size={14} className="text-red-500 animate-pulse" /> for Dani
           </p>
           <p className="text-gray-400 mt-2 md:mt-0 flex items-center gap-2">
@@ -181,7 +182,7 @@ export function Footer() {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
     </footer>

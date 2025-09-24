@@ -61,7 +61,8 @@ export function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <span className="text-green-400">./</span>{item.name}
+                <span className="text-green-400">./</span>
+                {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-green-400 group-hover:w-full transition-all duration-300"></span>
               </motion.a>
             ))}
@@ -94,7 +95,8 @@ export function Navigation() {
                 className="block px-6 py-2 text-gray-300 hover:text-cyan-400 transition-colors duration-300"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="text-green-400">./</span>{item.name}
+                <span className="text-green-400">./</span>
+                {item.name}
               </a>
             ))}
             <div className="px-6">

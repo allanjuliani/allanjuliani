@@ -1,38 +1,50 @@
 import { motion } from 'motion/react';
-import { Code, Shield, Cpu, Database, Zap, Network } from 'lucide-react';
+import { Code, Shield, Cpu, Database, Zap } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function AboutSection() {
   const skills = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "FULL_STACK_DEV",
-      description: "Advanced proficiency in React, Node.js, Python, and modern web architectures",
-      color: "cyan"
+      title: 'FULL_STACK_DEV',
+      description:
+        'Advanced proficiency in React, Node.js, Python, and modern web architectures',
+      color: 'cyan',
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "CYBERSECURITY",
-      description: "Implementing secure coding practices and penetration testing methodologies",
-      color: "red"
+      title: 'CYBERSECURITY',
+      description:
+        'Implementing secure coding practices and penetration testing methodologies',
+      color: 'red',
     },
     {
       icon: <Cpu className="w-6 h-6" />,
-      title: "AI_INTEGRATION",
-      description: "Machine learning implementations and neural network optimization",
-      color: "green"
+      title: 'AI_INTEGRATION',
+      description:
+        'Machine learning implementations and neural network optimization',
+      color: 'green',
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "DATA_ARCHITECT",
-      description: "Designing scalable database systems and distributed computing solutions",
-      color: "magenta"
-    }
+      title: 'DATA_ARCHITECT',
+      description:
+        'Designing scalable database systems and distributed computing solutions',
+      color: 'magenta',
+    },
   ];
 
   const techStack = [
-    'JavaScript', 'TypeScript', 'Python', 'Go', 'Rust',
-    'React', 'Node.js', 'Docker', 'Kubernetes', 'AWS'
+    'JavaScript',
+    'TypeScript',
+    'Python',
+    'Go',
+    'Rust',
+    'React',
+    'Node.js',
+    'Docker',
+    'Kubernetes',
+    'AWS',
   ];
 
   return (
@@ -57,7 +69,7 @@ export function AboutSection() {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear",
+            ease: 'linear',
           }}
         />
       </div>
@@ -71,15 +83,16 @@ export function AboutSection() {
           className="text-center mb-16"
         >
           <div className="font-mono text-green-400 mb-4">
-            <span className="text-cyan-400">{'>'}</span> cat /usr/local/bin/about.md
+            <span className="text-cyan-400">{'>'}</span> cat
+            /usr/local/bin/about.md
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text mb-6 font-mono">
             SYSTEM_INFO
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-mono">
             <span className="text-cyan-400">// </span>
-            Senior Software Engineer with 7+ years optimizing digital infrastructures
-            and building next-generation applications.
+            Senior Software Engineer with 7+ years optimizing digital
+            infrastructures and building next-generation applications.
           </p>
         </motion.div>
 
@@ -93,25 +106,36 @@ export function AboutSection() {
           >
             <div className="bg-black/60 backdrop-blur-sm border border-cyan-400/30 rounded-none p-6">
               <div className="font-mono text-green-400 mb-4">
-                <span className="text-cyan-400">{'>'}</span> ./biography.sh --verbose
+                <span className="text-cyan-400">{'>'}</span> ./biography.sh
+                --verbose
               </div>
               <p className="text-gray-300 leading-relaxed mb-4 font-mono text-sm">
-                Specialized in architecting scalable microservices, implementing AI-driven solutions,
-                and securing digital environments. Currently focusing on blockchain integration
-                and quantum-resistant cryptography.
+                Specialized in architecting scalable microservices, implementing
+                AI-driven solutions, and securing digital environments.
+                Currently focusing on blockchain integration and
+                quantum-resistant cryptography.
               </p>
               <p className="text-gray-300 leading-relaxed font-mono text-sm">
-                When not pushing commits, I contribute to open-source projects, research emerging
-                technologies, and mentor junior developers in the art of clean code.
+                When not pushing commits, I contribute to open-source projects,
+                research emerging technologies, and mentor junior developers in
+                the art of clean code.
               </p>
 
               {/* Terminal output style */}
               <div className="mt-6 bg-black/80 border border-green-400/30 p-4 font-mono text-sm">
                 <div className="text-green-400 mb-2">CURRENT_STATUS:</div>
-                <div className="text-cyan-400">├── Location: São Paulo, Brazil</div>
-                <div className="text-cyan-400">├── Role: Senior Software Engineer</div>
-                <div className="text-cyan-400">├── Focus: Full-Stack + AI/ML</div>
-                <div className="text-cyan-400">└── Availability: Open for projects</div>
+                <div className="text-cyan-400">
+                  ├── Location: São Paulo, Brazil
+                </div>
+                <div className="text-cyan-400">
+                  ├── Role: Senior Software Engineer
+                </div>
+                <div className="text-cyan-400">
+                  ├── Focus: Full-Stack + AI/ML
+                </div>
+                <div className="text-cyan-400">
+                  └── Availability: Open for projects
+                </div>
               </div>
             </div>
           </motion.div>
@@ -163,26 +187,27 @@ export function AboutSection() {
               cyan: {
                 border: 'border-cyan-400/30 hover:border-cyan-400/60',
                 text: 'text-cyan-400',
-                bg: 'group-hover:bg-cyan-400/5'
+                bg: 'group-hover:bg-cyan-400/5',
               },
               red: {
                 border: 'border-red-400/30 hover:border-red-400/60',
                 text: 'text-red-400',
-                bg: 'group-hover:bg-red-400/5'
+                bg: 'group-hover:bg-red-400/5',
               },
               green: {
                 border: 'border-green-400/30 hover:border-green-400/60',
                 text: 'text-green-400',
-                bg: 'group-hover:bg-green-400/5'
+                bg: 'group-hover:bg-green-400/5',
               },
               magenta: {
                 border: 'border-magenta-400/30 hover:border-magenta-400/60',
                 text: 'text-magenta-400',
-                bg: 'group-hover:bg-magenta-400/5'
-              }
+                bg: 'group-hover:bg-magenta-400/5',
+              },
             };
 
-            const colors = colorClasses[skill.color as keyof typeof colorClasses];
+            const colors =
+              colorClasses[skill.color as keyof typeof colorClasses];
 
             return (
               <motion.div
@@ -193,12 +218,20 @@ export function AboutSection() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className={`bg-black/60 backdrop-blur-sm border ${colors.border} rounded-none p-6 transition-all duration-300 ${colors.bg}`}>
-                  <div className={`${colors.text} mb-4 flex items-center justify-between`}>
+                <div
+                  className={`bg-black/60 backdrop-blur-sm border ${colors.border} rounded-none p-6 transition-all duration-300 ${colors.bg}`}
+                >
+                  <div
+                    className={`${colors.text} mb-4 flex items-center justify-between`}
+                  >
                     {skill.icon}
-                    <Zap className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity ${colors.text}`} />
+                    <Zap
+                      className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity ${colors.text}`}
+                    />
                   </div>
-                  <h3 className={`${colors.text} font-semibold mb-3 font-mono text-sm`}>
+                  <h3
+                    className={`${colors.text} font-semibold mb-3 font-mono text-sm`}
+                  >
                     {skill.title}
                   </h3>
                   <p className="text-gray-400 font-mono text-xs leading-relaxed">
@@ -219,7 +252,8 @@ export function AboutSection() {
           className="mt-16 bg-black/60 backdrop-blur-sm border border-green-400/30 rounded-none p-6 font-mono"
         >
           <div className="text-green-400 mb-4">
-            <span className="text-cyan-400">{'>'}</span> system_metrics --performance
+            <span className="text-cyan-400">{'>'}</span> system_metrics
+            --performance
           </div>
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div>
@@ -227,11 +261,15 @@ export function AboutSection() {
               <div className="text-gray-400 text-sm">COMMITS_THIS_MONTH</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-green-400 mb-1">99.9%</div>
+              <div className="text-2xl font-bold text-green-400 mb-1">
+                99.9%
+              </div>
               <div className="text-gray-400 text-sm">UPTIME_RATE</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-magenta-400 mb-1">24/7</div>
+              <div className="text-2xl font-bold text-magenta-400 mb-1">
+                24/7
+              </div>
               <div className="text-gray-400 text-sm">DEBUG_MODE</div>
             </div>
             <div>
