@@ -158,7 +158,10 @@ export function Footer() {
         >
           <p className="text-gray-400 flex items-center gap-2">
             <span className="text-cyan-400">{'>'}</span>
-            © {currentYear} Allan Juliani. Crafted with{' '}
+            {/* © {currentYear} Allan Juliani. Crafted with{' '}
+            <Code size={14} className="text-green-400" /> and{' '}
+            <Heart size={14} className="text-red-500 animate-pulse" /> for Dani */}
+            Crafted with{' '}
             <Code size={14} className="text-green-400" /> and{' '}
             <Heart size={14} className="text-red-500 animate-pulse" /> for Dani
           </p>
