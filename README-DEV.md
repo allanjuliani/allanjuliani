@@ -21,3 +21,10 @@ npm run deploy
 ```
 npm i -D sort-package-json
 ```
+
+# Update packages
+```
+npx npm-check-updates
+npx npm-check-updates -u
+npm install
+```
