@@ -28,3 +28,8 @@ npx npm-check-updates
 npx npm-check-updates -u
 npm install
 ```
+
+# Check packages
+```
+npx depcheck
+```
