@@ -14,7 +14,7 @@ const phrases = [
     "hi there 👋",
     "my name is Allan",
     "software engineer",
-    "17 years in IT field 🖥️",
+    "18 years in IT field",
     "working as a Software Engineer at Uber",
 ];
 
