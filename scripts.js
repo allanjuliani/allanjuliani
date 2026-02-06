@@ -15,7 +15,7 @@ const phrases = [
     "my name is Allan",
     "software engineer",
     "18 years in IT field",
-    "working as a Software Engineer at Uber",
+    "Software Engineer at Uber",
 ];
 
 let Home = {
