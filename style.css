@@ -99,7 +99,20 @@ section input {
     font-size: 16px;
     line-height: 1.6;
     padding: 0;
-    margin: -4px;
+    margin: 0;
+    width: auto;
+    flex: 1;
+}
+
+#form p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#consoleLog p {
+    margin: 4px;
+    line-height: 1.4;
 }
 
 /* About */
