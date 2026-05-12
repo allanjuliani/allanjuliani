@@ -6,7 +6,6 @@
     --color-link-hover: rgb(74, 144, 224);
     --color-section-bg: #11111190;
     --color-input-text: #ddd;
-    --color-project-bg: #22222290;
     --color-footer-bg: #0e0e0e9d;
     --color-about-dir: rgb(60, 180, 64);
     --color-about-root: rgb(201, 102, 21);
@@ -128,42 +127,35 @@ section input {
     color: var(--color-about-root);
 }
 
-/* Projects */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+/* Projects terminal */
+#projects .dir {
+    color: var(--color-about-dir);
 }
 
-.project {
-    background-color: var(--color-project-bg);
-    border: 1px solid var(--color-line);
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+#projects .root {
+    color: var(--color-about-root);
 }
 
-.project:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+#careerForm {
+    margin: 0;
 }
 
-.project h3 {
-    margin: 0 0 1rem;
-    color: var(--color-input-text);
+#careerForm p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    line-height: 28px;
 }
 
-.project a {
-    color: var(--color-link);
-    text-decoration: none;
+#careerConsoleLog p {
+    margin: 0;
+    line-height: 28px;
+}
+
+.career-company {
+    color: var(--color-about-dir);
     font-weight: bold;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.project a:hover {
-    text-decoration: underline;
-    color: var(--color-link-hover);
+    margin-top: 0.5rem !important;
 }
 
 /* Utility styles */
