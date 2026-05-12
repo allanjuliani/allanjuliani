@@ -3,8 +3,9 @@ document.querySelectorAll('nav a').forEach(link => {
         e.preventDefault();
         const targetId = this.getAttribute('href').slice(1);
         const targetSection = document.getElementById(targetId);
+        const headerHeight = document.querySelector('header').offsetHeight;
         window.scrollTo({
-            top: targetSection.offsetTop + 5,
+            top: targetSection.getBoundingClientRect().top + window.scrollY - headerHeight,
             behavior: 'smooth'
         });
      });
@@ -32,11 +33,11 @@ let Home = {
     fill: async function (column_index) {},
 };
 
-window.onload = function (e) {
+window.addEventListener('load', function (e) {
     const form = document.getElementById('form');
     form.addEventListener('submit', logSubmit);
     addLetters();
-};
+});
 
 function logSubmit(event) {
     event.preventDefault();
@@ -46,12 +47,12 @@ function logSubmit(event) {
 function addLog(text = null) {
     const commandInput = document.getElementById('command');
     const consoleLog = document.getElementById('consoleLog');
-    var newP = document.createElement('p');
-    var newSpanDir = document.createElement('span');
-    var newSpanRoot = document.createElement('span');
-    var dirContent = document.createTextNode('~/allanjuliani ');
-    var rootContent = document.createTextNode('# ');
-    var inputValue = document.createTextNode(text || commandInput.value);
+    const newP = document.createElement('p');
+    const newSpanDir = document.createElement('span');
+    const newSpanRoot = document.createElement('span');
+    const dirContent = document.createTextNode('~/allanjuliani ');
+    const rootContent = document.createTextNode('# ');
+    const inputValue = document.createTextNode(text || commandInput.value);
     newP.appendChild(newSpanDir);
     newP.appendChild(newSpanRoot);
     newP.appendChild(inputValue);
@@ -66,13 +67,13 @@ function addLog(text = null) {
 
 function addOutput(text) {
     const consoleLog = document.getElementById('consoleLog');
-    var newP = document.createElement('p');
-    var textContent = document.createTextNode(text);
+    const newP = document.createElement('p');
+    const textContent = document.createTextNode(text);
     newP.appendChild(textContent);
     consoleLog.appendChild(newP);
 }
 
-SLEEP_TIME = 80;
+const SLEEP_TIME = 80;
 async function addLetters() {
     const commandInput = document.getElementById('command');
     const command = './about.sh';

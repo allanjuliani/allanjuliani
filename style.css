@@ -5,10 +5,8 @@
     --color-link: rgb(60, 116, 180);
     --color-link-hover: rgb(74, 144, 224);
     --color-section-bg: #11111190;
-    --color-section-border: #1a5b31;
     --color-input-text: #ddd;
     --color-project-bg: #22222290;
-    --color-project-border: #1a5b31;
     --color-footer-bg: #0e0e0e9d;
     --color-about-dir: rgb(60, 180, 64);
     --color-about-root: rgb(201, 102, 21);
@@ -118,7 +116,6 @@ section input {
 
 #consoleLog p {
     margin: 0;
-    line-height: 1.4;
     line-height: 28px;
 }
 
@@ -145,6 +142,11 @@ section input {
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .project h3 {
@@ -196,4 +198,12 @@ footer {
 footer p {
     margin: 0;
     backdrop-filter: blur(8px);
+}
+
+/* Accessibility */
+a:focus-visible,
+nav a:focus-visible {
+    outline: 2px solid var(--color-link-hover);
+    outline-offset: 3px;
+    border-radius: 2px;
 }
