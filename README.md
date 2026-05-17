@@ -43,11 +43,10 @@ I build reliable software with a focus on backend systems, architecture, and tur
 
 ## GitHub stats
 
-[![GitHub stats (dark)](https://github-readme-stats-sigma-five.vercel.app/api?username=allanjuliani&show_icons=true&theme=dark&hide_border=true#gh-dark-mode-only)](https://github.com/allanjuliani)
-[![GitHub stats (light)](https://github-readme-stats-sigma-five.vercel.app/api?username=allanjuliani&show_icons=true&theme=default&hide_border=true#gh-light-mode-only)](https://github.com/allanjuliani)
+[![GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=allanjuliani&show_icons=true&theme=dark&hide_border=true#gh-dark-mode-only)](https://github.com/allanjuliani)
 
-[![Top languages (dark)](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=allanjuliani&layout=compact&theme=dark&hide_border=true#gh-dark-mode-only)](https://github.com/allanjuliani)
-[![Top languages (light)](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=allanjuliani&layout=compact&theme=default&hide_border=true#gh-light-mode-only)](https://github.com/allanjuliani)
+[![Top languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=allanjuliani&layout=compact&theme=dark&hide_border=true#gh-dark-mode-only)](https://github.com/allanjuliani)
+
 
 ---
 
